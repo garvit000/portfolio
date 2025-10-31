@@ -2,7 +2,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className='bg-white/10 backdrop-blur-xs shadow-md rounded-2xl p-6 w-full fixed top-0 left-0 flex justify-between items-center'>
+      <nav className='bg-white/10 backdrop-blur-xs shadow-md rounded-2xl p-6 w-full fixed top-0 left-0 flex justify-between items-center z-1'>
         <h1 className='text-2xl font-bold'>GSR</h1>
         <ul className='sm:flex hidden space-x-10'>
           <li>
