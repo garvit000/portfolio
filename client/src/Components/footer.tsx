@@ -25,7 +25,7 @@ function Footer() {
       </div>
    <div className="text-center mb-4">
         <p className="text-gray-400 text-xl">
-          &copy; {new Date().getFullYear()} GSR Projects
+           GSR Projects
         </p>
       </div>
     </div>
