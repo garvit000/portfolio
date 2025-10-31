@@ -1,7 +1,7 @@
 function Main() {
   return (
     <>
-    <main className="bg-linear-to-bl from-violet-500 to-fuchsia-500 p-22 h-screen">
+    <main className="bg-linear-to-b from-violet-500 to-fuchsia-500 p-22 h-screen overflow-y-auto">
         <h1 className="text-5xl font-bold font-mono text-center">
             Garvit Singh Rathore
         </h1>
