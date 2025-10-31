@@ -3,7 +3,7 @@ import Data from "./data";
 
 function Projects() {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-fuchsia-500 to-amber-600 py-12">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-fuchsia-500 to-amber-600 py-12" id="projects">
             <h2 className="text-4xl font-bold text-white mb-10">Projects</h2>
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto">
