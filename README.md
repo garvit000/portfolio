@@ -1,3 +1,3 @@
 # Portfolio
-A portfolio website <br>
-```Under Work```
+My portfolio website <br>
+```Under Development```
