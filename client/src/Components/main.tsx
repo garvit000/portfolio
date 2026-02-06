@@ -1,5 +1,3 @@
-import React from "react";
-
 function Main() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-violet-600 via-fuchsia-500 to-pink-400 flex flex-col items-center justify-center px-4 py-12">
