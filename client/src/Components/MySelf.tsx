@@ -31,7 +31,7 @@ export default function MySelf() {
                         setRoleIndex((prev) => (prev + 1) % roleNames.length);
                     }
                 }
-            }, setIsDeleting ? 50 : 150);
+            }, isDeleting ? 50 : 150);
             return () => clearTimeout(timeout);
         }, [charIndex, isDeleting, roleIndex, roleNames]);
 
