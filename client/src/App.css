@@ -2,3 +2,6 @@
 ::-webkit-scrollbar {
     display: none;
   }
+.titillium {
+  font-family: 'Titillium Web', sans-serif;
+}

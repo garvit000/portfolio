@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const name = "Garvit Singh Rathore";
 export default function HeroName() {
     return (
-        <h1 className="min-h-screen font-sans font-extrabold text-[6.5rem] text-fuchsia-100 leading-tight py-20 px-5">
+        <h1 className="font-sans font-extrabold text-[6.5rem] text-fuchsia-100 selection:text-black selection:bg-lime-400 leading-tight py-20 px-5">
             {name.split("").map((char, i) =>  (
                 <motion.span
                     key={i}
