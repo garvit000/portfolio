@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const roles: Record<string, string> = {
