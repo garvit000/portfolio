@@ -5,14 +5,3 @@
 .titillium {
   font-family: 'Titillium Web', sans-serif;
 }
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
-.blink::after {
-  content: "▋";
-  animation: blink 1s steps(1) infinite;
-  margin-left: 4px;
-}
