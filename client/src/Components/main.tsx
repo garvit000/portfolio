@@ -3,7 +3,7 @@ import MySelf from "./MySelf";
 
 function Main() {
   return (
-    <main className="min-h-screen bg-radial from-gray-800 to-black px-4 py-12">
+    <main className="min-h-screen bg-linear-to-b from-black to-gray-800 px-4 py-12">
       <HeroName/>
       <MySelf/>
     </main>
