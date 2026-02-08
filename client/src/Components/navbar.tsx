@@ -1,8 +1,16 @@
+import { motion } from "framer-motion";
 function Navbar() {
-
   return (
     <>
-      <nav className='fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl'>
+    <motion.nav
+      initial={{ y: -80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 0.6,
+        ease: "easeOut",
+      }}
+      className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl"
+    >
         <div className='bg-white/10 backdrop-blur-md shadow-lg shadow-black/20 rounded-full px-8 py-4 flex justify-between items-center border border-white/20 transition-all duration-300 hover:shadow-xl hover:shadow-black/30'>
           <h1 className='text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent'>GSR</h1>
           <ul className='sm:flex hidden space-x-8'>
@@ -29,7 +37,7 @@ function Navbar() {
             &#8801;
           </button>
         </div>
-      </nav>
+      </motion.nav>
     </>
   )
 }
