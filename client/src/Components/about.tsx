@@ -23,7 +23,7 @@ export default function About() {
             </div>
 
             <div contentEditable={true}
-                className="mt-4 text-gray-300 font-mono bg-gray-900/20 p-4 rounded-lg min-h-50 focus:outline-none focus:ring-2 focus:ring-blue-500 caret-green-400 ">
+                className="mt-4 text-gray-300 font-mono bg-gray-900/20 p-4 rounded-lg min-h-50 focus:outline-none focus:ring-2 focus:ring-blue-500 caret-green-400 selection:text-black selection:bg-lime-400">
                 <p>Hello! I'm Garvit Singh Rathore, a passionate Full Stack Developer and CSE Undergrad. I specialize in building scalable web applications and have a keen interest in cloud architecture. I'm also an active Open Source Contributor, always eager to collaborate and learn from the community.</p>
                 <p>With a strong foundation in both frontend and backend technologies, I enjoy creating seamless user experiences while ensuring robust functionality. My journey in tech is driven by curiosity and a desire to solve real-world problems through code.</p>
                 <p>Feel free to explore my projects and connect with me to discuss potential collaborations or just to say hi!</p>
