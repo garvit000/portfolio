@@ -18,10 +18,10 @@ function Projects() {
                     ))}
                 </div>
                 <div className="mt-12 text-center">
-                    <a 
-                        href="https://github.com/garvit000" 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
+                    <a
+                        href="https://github.com/garvit000"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-white text-fuchsia-600 font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-gray-100 transition duration-300"
                     >
                         View all projects on GitHub
