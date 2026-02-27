@@ -3,17 +3,21 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
-const expertise = {
-    'React': "./react.png",
-    'TypeScript': "./typescript.png",
-    'Node.js': "./node.png",
-    'Tailwind CSS': "./tailwind.png",
-    'GSAP': "./gsap.png",
-    'Framer Motion': "./framer.png",
-    'REST APIs': "./rest.png",
-    'Git / GitHub': "./git.png",
-    'Cloud Basics': "./cloud.png",
-};
+import { FaReact, FaNodeJs, FaGithub, FaCloud } from 'react-icons/fa';
+import { SiTypescript, SiTailwindcss, SiGreensock, SiFramer } from 'react-icons/si';
+import { TbApi } from 'react-icons/tb';
+
+const expertise = [
+    { name: 'React', icon: FaReact, color: 'text-blue-400' },
+    { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-500' },
+    { name: 'Node.js', icon: FaNodeJs, color: 'text-green-500' },
+    { name: 'Tailwind CSS', icon: SiTailwindcss, color: 'text-cyan-400' },
+    { name: 'GSAP', icon: SiGreensock, color: 'text-green-400' },
+    { name: 'Framer Motion', icon: SiFramer, color: 'text-pink-500' },
+    { name: 'REST APIs', icon: TbApi, color: 'text-gray-300' },
+    { name: 'Git / GitHub', icon: FaGithub, color: 'text-white' },
+    { name: 'Cloud Basics', icon: FaCloud, color: 'text-blue-300' },
+];
 
 export default function Skills() {
     const containerRef = useRef<HTMLElement | null>(null);
@@ -93,16 +97,20 @@ export default function Skills() {
                             animate={showExpertise ? 'show' : 'hidden'}
                             className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4"
                         >
-                            {Object.keys(expertise).map((skill) => (
+                            {expertise.map(({ name, icon: Icon, color }) => (
                                 <motion.div
-                                    key={skill}
+                                    key={name}
                                     variants={{
-                                        hidden: { opacity: 0, y: 14 },
-                                        show: { opacity: 1, y: 0 },
+                                        hidden: { opacity: 0, y: 20, scale: 0.95 },
+                                        show: { opacity: 1, y: 0, scale: 1 },
                                     }}
-                                    className="rounded-2xl bg-white/10 border border-white/15 backdrop-blur-md px-5 py-4 text-white/90 text-center"
+                                    whileHover={{ y: -5, scale: 1.05 }}
+                                    className="flex flex-col items-center justify-center gap-4 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md p-6 sm:p-8 text-white/90 text-center hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group"
                                 >
-                                    {skill}
+                                    <div className={`text-5xl sm:text-6xl transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] ${color}`}>
+                                        <Icon />
+                                    </div>
+                                    <span className="font-medium tracking-wide text-sm sm:text-base">{name}</span>
                                 </motion.div>
                             ))}
                         </motion.div>
