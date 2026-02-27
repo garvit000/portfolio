@@ -5,3 +5,12 @@
 .titillium {
   font-family: 'Titillium Web', sans-serif;
 }
+::selection{
+  background: #A3E635; 
+  color: #000000;
+}
+
+::-moz-selection {
+  background: #A3E635;
+  color: #000000;
+}
