@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import GSR from "../assets/gsr.png";
+import GSR from "../assets/gsr-logo.png";
 
 function Navbar() {
   return (
