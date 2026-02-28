@@ -3,7 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
-import { FaReact, FaNodeJs, FaGithub, FaCloud } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaGithub, FaCloud, FaDocker } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiGreensock, SiFramer } from 'react-icons/si';
 import { TbApi } from 'react-icons/tb';
 
@@ -16,7 +16,8 @@ const expertise = [
     { name: 'Framer Motion', icon: SiFramer, color: 'text-pink-500' },
     { name: 'REST APIs', icon: TbApi, color: 'text-gray-300' },
     { name: 'Git / GitHub', icon: FaGithub, color: 'text-white' },
-    { name: 'Cloud Basics', icon: FaCloud, color: 'text-blue-300' },
+    { name: 'AWS/Google Cloud', icon: FaCloud, color: 'text-blue-300' },
+    { name: 'Docker', icon: FaDocker, color: 'text-blue-500' },
 ];
 
 export default function Skills() {
@@ -83,7 +84,7 @@ export default function Skills() {
                     </div>
                 </div>
 
-                <div className="w-screen min-h-screen px-6 py-24 flex justify-center items-center">
+                <div className="w-screen min-h-screen px-4 sm:px-6 py-12 sm:py-24 flex justify-center items-center">
                     <div className="max-w-5xl w-full">
                         <motion.div
                             variants={{
@@ -95,7 +96,7 @@ export default function Skills() {
                             }}
                             initial="hidden"
                             animate={showExpertise ? 'show' : 'hidden'}
-                            className="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4"
+                            className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4"
                         >
                             {expertise.map(({ name, icon: Icon, color }) => (
                                 <motion.div
@@ -105,12 +106,12 @@ export default function Skills() {
                                         show: { opacity: 1, y: 0, scale: 1 },
                                     }}
                                     whileHover={{ y: -5, scale: 1.05 }}
-                                    className="flex flex-col items-center justify-center gap-4 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md p-6 sm:p-8 text-white/90 text-center hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group"
+                                    className="flex flex-col items-center justify-center gap-3 sm:gap-4 rounded-2xl sm:rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md p-4 sm:p-6 lg:p-8 text-white/90 text-center hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-300 group"
                                 >
-                                    <div className={`text-5xl sm:text-6xl transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] ${color}`}>
+                                    <div className={`text-4xl sm:text-5xl lg:text-6xl transition-transform duration-300 group-hover:scale-110 drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] ${color}`}>
                                         <Icon />
                                     </div>
-                                    <span className="font-medium tracking-wide text-sm sm:text-base">{name}</span>
+                                    <span className="font-medium tracking-wide text-xs sm:text-sm lg:text-base">{name}</span>
                                 </motion.div>
                             ))}
                         </motion.div>
