@@ -4,7 +4,7 @@ import Main from './Components/main'
 import Projects from './Components/projects'
 import About from "./Components/about"
 import Skills from './Components/skills'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 import './App.css'
 
 function App() {
