@@ -17,7 +17,7 @@ function Navbar() {
           <img src={GSR} alt="GSR" className="w-25 h-15" />
           <ul className='sm:flex space-x-8'>
             <li className='group'>
-              <a href="/gsr_resume.pdf" target="_blank" rel="noopener noreferrer" className='relative text-white/90 hover:text-white text-2xl font-bold transition-colors duration-200'>
+              <a href="/web-resume.pdf" target="_blank" rel="noopener noreferrer" className='relative text-white/90 hover:text-white text-2xl font-bold transition-colors duration-200'>
                 <span style={{ fontFamily: "Calibri, serif" }}>Résumé</span>
                 <span className='absolute bottom-0 left-0 w-0 h-0.5 bg-linear-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300'></span>
               </a>
