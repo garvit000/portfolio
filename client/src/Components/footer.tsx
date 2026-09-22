@@ -1,15 +1,7 @@
-import { useState } from "react";
-import { FaGithub, FaLinkedin, FaInstagram, FaCopy, FaCheck, FaArrowUp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaArrowUp } from "react-icons/fa";
 
 function Footer() {
-  const [copied, setCopied] = useState(false);
   const email = "contact@garvitsr.dev";
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -35,11 +27,7 @@ function Footer() {
               <span className="font-mono text-xs text-cyan-400 uppercase tracking-widest font-semibold">
                 Get in touch
               </span>
-              <span className="inline-flex items-center gap-1.5 text-[11px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                Available
-              </span>
-            </div>
+              </div>
 
             <p className="font-bold text-2xl sm:text-3xl text-white mb-6 font-sans">
               Let's connect.
@@ -91,24 +79,7 @@ function Footer() {
             >
               {email}
             </a>
-            <button
-              onClick={handleCopy}
-              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-mono transition-all flex items-center gap-1.5 flex-shrink-0 cursor-pointer active:scale-95"
-              title="Copy Email"
-            >
-              {copied ? (
-                <>
-                  <FaCheck className="text-emerald-400 text-xs" />
-                  <span className="text-emerald-400 font-medium">Copied</span>
-                </>
-              ) : (
-                <>
-                  <FaCopy className="text-xs text-gray-400" />
-                  <span>Copy</span>
-                </>
-              )}
-            </button>
-          </div>
+            </div>
         </div>
       </div>
 
