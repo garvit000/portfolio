@@ -1,17 +1,20 @@
-const Data = [
-    {
-        title: "French Architectures",
-        description: "This was a first semester project website for our french language, in which we will show you all the famous architectures from french regions which are known for their stunning design and architecure.",
-        link: "https://github.com/garvit000/french-architectures",
-        imageUrl: "https://i.ibb.co/27qwY3dK/Screenshot-2025-03-31-220157.png",
-        liveUrl: "https://garvit000.github.io/french-architectures/",
-    },
+export interface ProjectItem {
+    title: string;
+    description: string;
+    link: string;
+    imageUrl: string;
+    liveUrl: string;
+    tags?: string[];
+}
+
+const Data: ProjectItem[] = [
     {
         title: "JanPath",
         description: "JanPath is a Civic Grievance Intelligence Platform, streamlining the reporting and resolution of public grievances.",
         link: "https://github.com/garvit000/JanPath",
         imageUrl: "https://i.ibb.co/DHyhCFFk/image.png",
         liveUrl: "https://janpath.vercel.app",
+        tags: ["React", "Node.js", "Express", "Tailwind CSS"],
     },
     {
         title: "Prognosis Care",
@@ -19,6 +22,15 @@ const Data = [
         link: "https://github.com/garvit000/prognosis-care",
         imageUrl: "https://i.ibb.co/QvngpJwH/image.png",
         liveUrl: "https://prognosis-care.vercel.app",
+        tags: ["React", "TypeScript", "Tailwind CSS", "REST API"],
+    },
+    {
+        title: "French Architectures",
+        description: "This was a first semester project website for our french language, in which we will show you all the famous architectures from french regions which are known for their stunning design and architecure.",
+        link: "https://github.com/garvit000/french-architectures",
+        imageUrl: "https://i.ibb.co/27qwY3dK/Screenshot-2025-03-31-220157.png",
+        liveUrl: "https://garvit000.github.io/french-architectures/",
+        tags: ["HTML5", "CSS3", "JavaScript"],
     }
 ];
 export default Data;

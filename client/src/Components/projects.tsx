@@ -23,9 +23,10 @@ function Projects() {
                             description={project.description}
                             imageUrl={project.imageUrl}
                             link={project.link}
+                            liveUrl={project.liveUrl}
+                            tags={project.tags}
                             index={index}
                         />
-
                     ))}
                 </div>
                 <div className="mt-16 text-center">
