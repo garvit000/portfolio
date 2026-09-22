@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Projects() {
     return (
-        <section className="flex flex-col items-center justify-center min-h-screen bg-linear-to-b from-black via-black to-amber-600 py-24" id="projects">
+        <section className="flex flex-col items-center justify-center min-h-screen bg-linear-to-b from-black via-black to-zinc-950 py-24" id="projects">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
